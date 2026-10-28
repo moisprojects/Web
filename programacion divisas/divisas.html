@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>Divisas</title>
+      <meta name="viewport" content="width=device-width initial-scale=0.4">
+      <link rel="stylesheet" type="text/css" href="css/divisas.css">
+      <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    </head>
+  <body>
+    <div id="principal">
+      <section id="slide"> 
+        <section id="quiz">
+          <header>
+            <h2>Cambio de divisas</h2>
+          </header>
+          <form name="transF" id="transform">
+            <div id="select">
+              <label for="">D:</label>
+              <select name="origenF" class="coin">
+                <option value="XAF">XAF</option>
+                <option value="€">€</option>
+                <option value="$">$</option>
+                <option value="£">£</option>
+              </select>
+              &nbsp;
+              <label for="">A:</label>
+              <select name="destinoF" class="coin">
+                <option value="XAF">XAF</option>
+                <option value="€">€</option>
+                <option value="$">$</option>
+                <option value="£">£</option>
+              </select>
+            </div>
+            <div class="labels">
+              <h3 id="input">Entrada</h3>
+              <h3 id="output">Salida</h3>
+            </div>
+            <div id="enter">
+              <input type="text" name="inputF" class="inputs" required>
+              <input type="text" name="outputF" class="inputs" disabled>
+            </div>
+            <button type="button">Convertir</button>
+          </form>
+        </section>
+      </section>
+    </div>
+    <script type="text/javascript" src="./js/divisa_Script.js"></script>
+  </body>
+</html>
+

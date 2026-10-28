@@ -1,0 +1,155 @@
+
+section.contenedor{
+	width: 100%;
+  margin: 32px auto 50px;
+  font-size: 18px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+#slide{
+  width: 100%;
+  height: 100%;
+  border: 0 solid #000;
+  text-align: justify;
+}
+#slide > h2{
+  width: 97%;
+  display: table;
+  margin: 0 auto 40px;
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.title{
+  margin: 50px 20px 32px;
+  font-size: 12px;
+}
+.social_icon a{
+  color: #d78d0e;
+  padding: 10px;
+  font-size: 22px;
+  background: #fff;
+  border-radius: 50%;
+}
+.aside{
+	display: none;
+}
+.article{
+	width: 95%;
+	margin: 0 auto;
+}
+#footer{
+	height: 125px;
+	text-align: center;
+	padding: 40px;
+	background: rgba(0,0,0,0.5);
+	font-family: 'Times New Roman', Times, serif;
+	color: #fff;
+	display: block;
+	clear: both;
+	font-size: 25px;
+	font-weight: bold;
+}
+body.dark{
+  background: #242424;
+}
+body.dark section.contenedor{
+	color: #fff;
+}
+body.dark #slide > h2,
+  body.dark .aside > h2, body.dark .aside h3{
+	color: #fff;
+	border-bottom: 2px solid silver;
+}
+body.dark #slide > h3{
+	border-bottom: 2px solid #fff;
+}
+body.dark td{
+	border-bottom: 1px dotted #fff;
+}
+body.dark #footer{
+	background: gray;
+}
+
+
+@media screen and (min-width: 1024px) {
+	section.contenedor{
+    width: 85%;
+    height: 100%;
+    margin: 40px auto 80px;
+		font-size: 17px;
+  }
+	#slide{
+    width: 67%;
+  }
+  #slide > h2{
+    width: 100%;
+    margin-left: 0;
+    display: table;
+    font-size: 22px;
+		line-height: 22px;
+  }
+  .article{
+		width: 100%;
+    margin: 0;
+  }
+  .social_icon a{
+    padding: 8px;
+		font-size: 20px;
+  }
+  .title{
+    margin: 40px 0 24px;
+  }
+	.title > h2{
+    font-size: 28px;
+	}
+	.aside{
+		display: block;
+		width: 28.8%;
+		height: 100%;
+		text-align: justify;
+	}
+	.aside > h2,.aside > h3{
+		width: 100%;
+		border-bottom: 1px solid rgba(0,0,0,0.5);
+		display: table;
+		margin-bottom: 40px;
+		font-size: 22px;
+		line-height: 22px;
+	}
+	.aside > h3{
+		margin-top: 40px;
+	}
+	.aside img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	table{
+		width: 100%;
+		margin-top: -10px;
+	}
+	td{
+		border-bottom: 1px dotted #000;
+		line-height: 28px;
+		padding: 10px 0;
+	}
+	tr td:nth-child(1) {
+		width: 15%;
+		text-align: left;
+		font-size: 35px;
+		height: 100%;
+		font-weight: 1000;
+	}
+	#footer{
+		height: 120px;
+	  padding: 45px;
+		font-size: 22px;
+	}
+}
